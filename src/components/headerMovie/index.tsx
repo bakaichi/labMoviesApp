@@ -26,7 +26,7 @@ const MovieHeader: React.FC<MovieDetailsProps> = (movie) => {
   
   const storedFavourites = localStorage.getItem("favourites");
   const favourites = storedFavourites ? JSON.parse(storedFavourites) : [];
-  const isFavourite = favourites.find((favourite: { id: number; }) => favourite.id ===movie.id) !== undefined;
+  const isFavourite = favourites.find((favourite: { id: number; }) => favourite.id === movie.id) !== undefined;
   
   return (
     <Paper component="div" sx={styles.root}>

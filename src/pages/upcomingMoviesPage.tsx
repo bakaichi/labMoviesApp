@@ -22,7 +22,7 @@ const UpcomingMoviesPage: React.FC = () => {
       action={(movie: BaseMovieProps) => {
         return (
           <IconButton>
-            <PlaylistAddIcon  {...movie} />
+            <PlaylistAddIcon {...movies}/>
           </IconButton>
         );
       }}
